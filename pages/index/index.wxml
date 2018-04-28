@@ -19,15 +19,21 @@
   </view>
 
 
-  <view class="usermotto">
+<view>
+      <image class="indexBg" src="https://www.baidu.com/img/bd_logo1.png" background-size="cover"
+      mode='aspectFill'></image>
+
+</view>
+
+  <view class="btnlessonA">
     <text bindtap="bindViewLessonA"      class="user-motto">{{lesson1}}</text>
   </view>
 
-  <view class="usermotto">
+  <view class="btnlessonB">
     <text bindtap="bindViewTap"      class="user-motto">{{lesson2}}</text>
   </view>
 
-  <view class="usermotto">
+  <view class="btnlessonC">
     <text bindtap="bindViewTap"      class="user-motto">{{lesson3}}</text>
   </view>    
 

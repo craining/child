@@ -21,6 +21,19 @@
   color: #aaa;
 }
 
-.usermotto {
+.btnlessonA {
   margin-top: 20px;
+}
+
+.btnlessonB {
+  margin-top: 20px;
+}
+
+.btnlessonC {
+  margin-top: 20px;
+}
+
+.indexBg{
+  width: 500;
+  height: 1000;
 }

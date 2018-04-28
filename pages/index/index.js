@@ -5,9 +5,7 @@ const app = getApp()
 
 Page({
   data: {
-    lesson1: 'Lesson 1',
-    lesson2: 'Lesson 2',
-    lesson3: 'Lesson 3',
+  
     screenWidth : 0,
     screenHeight : 0,
     // userInfo: {},
@@ -15,12 +13,12 @@ Page({
     //canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
-  // //事件处理函数
-  // bindViewTap: function() {
-  //   wx.navigateTo({
-  //     url: '../logs/logs'
-  //   })
-  // },
+  //事件处理函数
+  bindViewTap: function() {
+    wx.navigateTo({
+      url: '../logs/logs'
+    })
+  },
 
   //事件处理函数
   bindViewLessonA: function () {
@@ -28,6 +26,14 @@ Page({
       url: '../lessonA/lessonA'
     })
   },
+
+  //事件处理函数
+  bindViewCallMe: function () {
+    wx.makePhoneCall({
+      phoneNumber: '18210633121' 
+    })
+  },
+
 
   onLoad: function () {
     // wx.playBackgroundAudio({
@@ -37,22 +43,32 @@ Page({
     // })
 
     try {
-      var res = wx.getSystemInfoSync()
-      // console.log(res.windowWidth)
-      // console.log(res.windowHeight)
-      screenWidth : res.windowWidth
-      screenHeight : res.windowHeight
+      var _this = this;
+      //获取屏幕宽高 
+      wx.getSystemInfo({
+        success: function (res) {
+          console.log('screenWidth: ' + res.windowWidth)
+          console.log('screenHeight: ' + res.windowHeight)
+          _this.setData({
+            screenWidth: res.windowWidth,
+            screenHeight: res.windowHeight
+          })
+        }
+      })
 
     } catch (e) {
       // Do something when catch error
       
     }
 
-    lesson3:'hahahha'
 
-    wx.showToast({
-      title: 'welcome !',
-    })
+  
+
+    // wx.showToast({
+    //   title: 'welcome !',
+    // })
+  
+  
 
     // if (app.globalData.userInfo) {
     //   this.setData({

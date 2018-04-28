@@ -1,5 +1,3 @@
-.userinfo-avatar {
-  width: 800;
-  height: 1000;
- 
+ .container{ 
+    background-color: lightblue;  
 }

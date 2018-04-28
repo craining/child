@@ -14,23 +14,29 @@
   </view>  -->
 
 
+
+
+
   <view class="btnlessonA">
+  <image class="icon" src="../resources/ic_launcher.png" 
+      mode='aspectFill'></image>
+
     <text class="textWelcome" class="text-welcome">
-    Welcome!!
+    Hello! I am a young boy!
     </text>
 
     <text bindtap="bindViewLessonA" class="text-lessonA">
-    Click me!
+    Click here to play a game with me!
     </text>
 
 
    <text bindtap="bindViewCallMe" class="text-lessonC">
-    Call me!
+    Like me?  Give me a call!
     </text>
 
 
     <text bindtap="bindViewTap" class="text-lessonB">
-    See Log
+    
     </text>
 
 

@@ -3,7 +3,15 @@
  .container{ 
     background-color: lightblue;  
    
-   /* background-image: '../resources/ic_launcher.jpg';  */
+   /* background-image: '../resources/ic_launcher.png';  */
+}
+
+.icon{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  padding-bottom: 80rpx;
+  margin-top: 80rpx;
 }
 
 .userinfo {
@@ -25,22 +33,22 @@
  
 
 .text-welcome{
-  margin-top: 100rpx;
+  margin-top: 50rpx;
    color: #FFFF00;
-   font: 100rpx bold;
+   font: 50rpx bold;
 }
 
  .text-lessonA{
-   margin-top: 200rpx;
+   margin-top: 30rpx;
    color: #FF00FF;
  }
 
  .text-lessonB{
    /* margin-top: 95rpx; */
-   margin: 100rpx;
+   margin-top: 30rpx;
  }
 
  .text-lessonC{
    /* margin-top: 95rpx */
-    margin: 100rpx;
+    margin-top: 30rpx;
  }

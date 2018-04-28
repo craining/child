@@ -5,8 +5,8 @@ const app = getApp()
 Page({
   data: {
     lesson1: 'Lesson 1',
-    lesson2: 'Lessong 2',
-    lesson3: 'Lessong 3',
+    lesson2: 'Lesson 2',
+    lesson3: 'Lesson 3',
     userInfo: {},
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo')

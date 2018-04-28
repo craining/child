@@ -1,7 +1,9 @@
 /**index.wxss**/
 
-.container{
-  background-color: lightblue
+ .container{ 
+   background-color: lightblue; 
+   height:max-content;
+  /* background-image:"https://www.baidu.com/img/bd_logo1.png"; */
 }
 
 .userinfo {
@@ -31,9 +33,4 @@
 
 .btnlessonC {
   margin-top: 20px;
-}
-
-.indexBg{
-  width: 500;
-  height: 1000;
 }

@@ -1,40 +1,35 @@
 <!--index.wxml-->
-<view class="container"  >
+<view class="container"  width="{{screenWidth}}" height="{{screenHeight}}">
+<!-- 
+      <image class="indexBg" src="https://www.baidu.com/img/bd_logo1.png" 
+      mode='aspectFill'></image> -->
 
- 
-  <view class="userinfo">
-
+  <!-- <view class="userinfo">
     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
-
     <block wx:else>
-
       <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
-
       <text  
       class="userinfo-nickname">{{userInfo.nickName}}</text>
-
     </block>
+  </view> -->
 
-
-  </view>
-
-
-<view>
-      <image class="indexBg" src="https://www.baidu.com/img/bd_logo1.png" background-size="cover"
-      mode='aspectFill'></image>
-
-</view>
 
   <view class="btnlessonA">
-    <text bindtap="bindViewLessonA"      class="user-motto">{{lesson1}}</text>
+    <text bindtap="bindViewLessonA"      class="user-motto">
+    {{lesson1}}
+    </text>
   </view>
 
   <view class="btnlessonB">
-    <text bindtap="bindViewTap"      class="user-motto">{{lesson2}}</text>
+    <text bindtap="bindViewTap"      class="user-motto">
+    {{lesson2}}
+    </text>
   </view>
 
   <view class="btnlessonC">
-    <text bindtap="bindViewTap"      class="user-motto">{{lesson3}}</text>
+    <text bindtap="bindViewTap"      class="user-motto">
+    {{lesson3}}
+    </text>
   </view>    
 
  

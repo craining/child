@@ -2,22 +2,25 @@
 //获取应用实例
 const app = getApp()
 
+
 Page({
   data: {
     lesson1: 'Lesson 1',
     lesson2: 'Lesson 2',
     lesson3: 'Lesson 3',
-    userInfo: {},
-    hasUserInfo: false,
+    screenWidth : 0,
+    screenHeight : 0,
+    // userInfo: {},
+    // hasUserInfo: false,
     //canIUse: wx.canIUse('button.open-type.getUserInfo')
   },
 
-  //事件处理函数
-  bindViewTap: function() {
-    wx.navigateTo({
-      url: '../logs/logs'
-    })
-  },
+  // //事件处理函数
+  // bindViewTap: function() {
+  //   wx.navigateTo({
+  //     url: '../logs/logs'
+  //   })
+  // },
 
   //事件处理函数
   bindViewLessonA: function () {
@@ -27,6 +30,30 @@ Page({
   },
 
   onLoad: function () {
+    // wx.playBackgroundAudio({
+    //   dataUrl: '../resources/music.mp3',
+    //   title: '背景音乐',
+    //   coverImgUrl: '../resources/ic_launcher.jpg'
+    // })
+
+    try {
+      var res = wx.getSystemInfoSync()
+      // console.log(res.windowWidth)
+      // console.log(res.windowHeight)
+      screenWidth : res.windowWidth
+      screenHeight : res.windowHeight
+
+    } catch (e) {
+      // Do something when catch error
+      
+    }
+
+    lesson3:'hahahha'
+
+    wx.showToast({
+      title: 'welcome !',
+    })
+
     // if (app.globalData.userInfo) {
     //   this.setData({
     //     userInfo: app.globalData.userInfo,
@@ -55,12 +82,12 @@ Page({
     // }
   },
   
-  getUserInfo: function(e) {
-    console.log(e)
-    app.globalData.userInfo = e.detail.userInfo
-    this.setData({
-      userInfo: e.detail.userInfo,
-      hasUserInfo: true
-    })
-  }
+  // getUserInfo: function(e) {
+  //   console.log(e)
+  //   app.globalData.userInfo = e.detail.userInfo
+  //   this.setData({
+  //     userInfo: e.detail.userInfo,
+  //     hasUserInfo: true
+  //   })
+  // }
 })
